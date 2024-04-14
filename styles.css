@@ -410,3 +410,107 @@ body{
 
   }
 
+  /*SECTION 4*/
+  .full-width-image-section-4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/image-landing-section-4.png');
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+  }
+  .square-our-services {
+    background-color: #FFDCE5;
+    width: 70%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px; 
+  }
+
+  .services-title  {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .services-title h2 {
+    font-weight: 700;
+    font-size: 2em;
+    
+  }
+
+
+.services-row {
+    flex: 4; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px; 
+
+    
+  }
+  
+  .service-text {
+    flex: 5; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+  }
+  .service-text h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    
+  }
+  .service-text p {
+    padding: 1em;
+    font-weight: 500;
+  }
+  .service-image {
+    flex: 5;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .service-image img {
+    width: 70%; 
+    height: auto; 
+  }
+
+  /*SECTION 5*/
+
+  .full-width-image-section-5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/image-landing-section-3.png');
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+  }
+  .square-our-services-2 {
+    background-color:#95A8FF;
+    width: 70%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px; 
+  }

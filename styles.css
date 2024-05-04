@@ -191,7 +191,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: left;
-    font-size: 5em; 
+    font-size: 4.6em;
     padding-top:0.5em;
   }
   
@@ -813,3 +813,5 @@ body{
     margin: 0; 
     font-size: 0.9em;
   }
+
+  /* Language Switch */

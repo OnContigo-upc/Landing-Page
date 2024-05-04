@@ -8,7 +8,7 @@
     <meta name="keywords" content="cancer, cancer research, cancer support, cancer support platform, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services, cancer support services">
     <meta name="author" content="Los Ramos">
 
-    <link rel="icon" href="/img/oncontigologo.png">
+    <link rel="icon" href="img/oncontigologo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,9 @@
         <div class="logo">
             <img src="img/oncontigologo.png" alt="logo-oncontigo">
         </div>
-        <button class="hamburger" aria-label="Open Menu">☰</button>
+        <button class="hamburger" aria-label="Open Menu" onclick="displayMenu()">☰</button>
         <nav>
-           <ul class="nav-links">
+           <ul id="nav-links" class="nav-links">
                 <li><a href="#about-us">About us</a></li>
                 <li><a href="#members">Members</a></li>
                 <li><a href="#services">Our Services</a></li>
@@ -112,7 +112,7 @@
               <div class="services-row">
                 <div class="service-image">
                     <!-- La imagen aquí es meramente ilustrativa; reemplaza 'path-to-your-image' con la ruta correcta -->
-                    <img src="/img/services-clock.png" alt="Appointment Calendar">
+                    <img src="img/services-clock.png" alt="Appointment Calendar">
                   </div>
                 <div class="service-text">
                   <h3>Appointment Calendar</h3>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="service-image">
                   <!-- La imagen aquí es meramente ilustrativa; reemplaza 'path-to-your-image' con la ruta correcta -->
-                  <img src="/img/services-clock2.png" alt="Medical Reminders">
+                  <img src="img/services-clock2.png" alt="Medical Reminders">
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@
               <div class="services-row">
                 <div class="service-image">
                     <!-- La imagen aquí es meramente ilustrativa; reemplaza 'path-to-your-image' con la ruta correcta -->
-                    <img src="/img/services-write.png" alt="Appointment Calendar">
+                    <img src="img/services-write.png" alt="Appointment Calendar">
                   </div>
                 <div class="service-text">
                   <h3>Information Resources</h3>
@@ -158,80 +158,68 @@
                 </div>
                 <div class="service-image">
                   <!-- La imagen aquí es meramente ilustrativa; reemplaza 'path-to-your-image' con la ruta correcta -->
-                  <img src="/img/services-write2.png" alt="Medical Reminders">
+                  <img src="img/services-write2.png" alt="Medical Reminders">
                 </div>
               </div>
             </div>
           </section>
           <section id="plans" class="full-width-image-section-6">
-            <div class="square-plans">
-              <!-- Títulos de las columnas (puedes agregar más si es necesario) -->
-              <div class="plans-header">
-                Plans
-            </div>
-              <div class="plans-header">
-                <img src="/img/plan-basic.png" alt="Basic Plan">
-
-              </div>
-              <div class="plans-header">
-                <img src="/img/plan-premium.png" alt="Premium Plan">
-              </div>
-              <div class="plans-header">
-                <img src="/img/plan-pro-service.png" alt="ProService Plan">
-              </div>
-              
-              <!-- Items de la lista (replica esta estructura para cada fila que necesites) -->
-              <div class="plans-item " >Access to information resources</div>
-              <div class="plans-check">
-                <img src="/img/check.png" alt="Check">
-              </div>
-              <div class="plans-check">
-                <img src="/img/check.png" alt="Check">
-              </div>
-              <div class="plans-check">
-                <img src="/img/check.png" alt="Check">
-              </div>
-          
-              <!-- Continúa con más filas según sea necesario -->
-              <div class="plans-item">Appointment Reminders</div>
-              <div class="plans-check">
-                <img src="/img/check.png" alt="Check">
-              </div>
-              <div class="plans-check">
-                <img src="/img/check.png" alt="Check">
-              </div>
-              <div class="plans-check">
-                <img src="/img/check.png" alt="Check">
-              </div>
-
-
-              <div class="plans-item">Medication Reminders</div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"> </div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-
-
-              <div class="plans-item">Chat Access</div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-item">View treatment period</div>
-              <div class="plans-check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-item">Access to Personalized nutrition</div>
-              <div class="plans-check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-item">Support Priority</div>
-              <div class="plans-check"></div>
-              <div class="plans-check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-              <div class="plans-item">Access to Oncoach</div>
-              <div class="plans-check"></div>
-              <div class="plans-check"></div>
-              <div class="plans-check"> <img src="/img/check.png" alt="Check"></div>
-            </div>
+              <table class="square-plans bg-soft-pink">
+                  <tr class="bg-soft-pink">
+                      <th>Plans</th>
+                      <th><img class="plan-img" src="img/plan-basic.png" alt="Basic Plan"></th>
+                      <th><img class="plan-img" src="img/plan-premium.png" alt="Premium Plan"></th>
+                      <th><img class="plan-img" src="img/plan-pro-service.png" alt="Pro Plan"></th>
+                  </tr>
+                  <tr class="bg-strong-pink">
+                      <td>Access to information resources</td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-soft-pink2">
+                      <td>Appointment Reminders</td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-strong-pink">
+                      <td>Medication Reminders</td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-soft-pink2">
+                      <td>Chat Access</td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-strong-pink">
+                      <td>View treatment period</td>
+                      <td></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-soft-pink2">
+                      <td>Access to Personalized nutrition</td>
+                      <td></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-strong-pink">
+                      <td>Support Priority</td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+                  <tr class="bg-soft-pink2">
+                      <td>Access to Oncoach</td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-center"><img class="check-img" src="img/check.png" alt="Check"></td>
+                  </tr>
+              </table>
           </section>
 
           <section id="testimonials" class="full-width-image-section-7">
@@ -306,3 +294,14 @@
     </main>
 </body>
 </html>
+<script>
+    function displayMenu(e) {
+        let list = document.getElementById('nav-links');
+        console.log(list);
+        if (list.style.display === "none") {
+            list.style.display = "block";
+        } else {
+            list.style.display = "none";
+        }
+    }
+</script>

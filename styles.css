@@ -37,7 +37,16 @@ body{
 .header .logo img:hover{
     transform: scale(1.2);
 }
-
+.main-row{
+    display:flex;
+}
+.col{
+    flex-grow:1;
+    margin:0px 2px;
+}
+.bg-strong-pink{
+    background-color: #FF94B0;
+}
 .header .nav-links{
     list-style: none;
 }
@@ -105,20 +114,23 @@ body{
     transform: scale(1.1);
 }
 
-.hamburger {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-}
 
+.hamburger {
+    color: #ffffff;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    background: none;
+    display: none;
+
+}
 @media (max-width: 1205px) {
     .hamburger {
-        display: block;
+        display: inline-block;
     }
-    
     .nav-links, .nav-btn {
         display: none;
     }
@@ -487,6 +499,9 @@ body{
     font-size: 1.5em;
     
   }
+  .text-center{
+      text-align: center;
+  }
   .service-text p {
     padding: 1em;
     font-weight: 500;
@@ -550,33 +565,43 @@ body{
 
   /*SECTION 6*/
   .full-width-image-section-6 {
-    position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: url('img/image-landing-section-4.png');
     background-size: cover;
-    height: 800px;
     width: 100%;
+      margin:0 auto;
   }
-  .square-plans {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr; 
-    grid-auto-rows: minmax(50px, auto);
-    gap: 20px; 
-    width: 50%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #FFDCE5;
+  .bg-soft-pink {
+      background-color:#FFDCE5;
   }
-  
+.bg-soft-pink2 {
+    background-color:#FFBBCD;
+}
+  .plan-img{
+      background-size: cover;
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
+  }
+  .check-img{
+      background-size: cover;
+      height: 50px;
+      width: 50px;
+      margin: 0 auto;
+
+  }
+  .square-plans{
+      margin: 0 auto;
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-right: 20px;
+      padding-left: 10px;
+  }
   .plans-header {
     font-weight: bold;
     text-align: center;
     font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
